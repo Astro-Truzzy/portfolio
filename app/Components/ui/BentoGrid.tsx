@@ -1,11 +1,7 @@
 'use client'
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBG";
-import Lottie from "react-lottie";
-import { useState } from "react";
-import animationData from '@/data/confetti.json'
-import { IoCopyOutline } from "react-icons/io5";
-import MagicButton from '../MagicButton'
+import CopyEmailButton from '../CopyEmailButton'
 
 
 export const BentoGrid = ({
@@ -47,13 +43,6 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
 
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText('taresy.dev@gmail.com');
-    setCopied(true);
-    // setTimeout(() => setCopied(false), 1000);
-  }
 
   return (
     <div
@@ -153,22 +142,8 @@ export const BentoGridItem = ({
 {id === 6 && (
   <div className="mt-5 relative">
     <div className={` absolute -bottom-5 right-0`}>
-<Lottie options={{
-  loop: copied,
-  autoplay: copied,
-  animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  }
-}}/>
     </div>
-    <MagicButton
-  title={copied ? 'Email copied' : 'Copy My email'}
-  icon={<IoCopyOutline/>}
-  position="left"
-  otherClasses='!bg-[#161a31]'
-  handleClick={handleCopy}
-/>
+    <CopyEmailButton/>
   </div>
 )}
 
