@@ -1,7 +1,12 @@
 'use client'
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBG";
-import CopyEmailButton from '../CopyEmailButton'
+import dynamic from "next/dynamic";
+
+
+const CopyEmailButton = dynamic(() => import('../CopyEmailButton'), {
+  ssr: false,
+});
 
 
 export const BentoGrid = ({

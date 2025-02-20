@@ -20,7 +20,7 @@ const handleCopy = async() => {
     setShowAnimation(false);
     }, 2000);
     } catch (error) {
-        console.log("Failed to copy:", error.message);
+        console.log("Failed to copy");
     }
 };
 

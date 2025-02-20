@@ -9,14 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sentry/nextjs": "9",
     "@tabler/icons-react": "^3.30.0",
+    "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
+    "dotted-map": "^2.2.3",
+    "framer-motion": "^12.4.5",
+    "init": "^0.1.2",
     "mini-svg-data-uri": "^1.4.4",
-    "motion": "^12.4.1",
-    "next": "15.1.6",
+    "motion": "^12.4.4",
+    "next": "15.1.7",
     "next-themes": "^0.4.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "npx": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-lottie": "^1.2.10",
     "tailwind-merge": "^3.0.1",
@@ -24,15 +30,36 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "^20.17.19",
+    "@types/react": "^19.0.10",
     "@types/react-dom": "^19",
     "@types/react-lottie": "^1.2.10",
+    "@types/three": "^0.163.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "mini-css-extract-plugin": "^2.9.2",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@sentry/cli",
+      "core-js",
+      "core-js",
+      "sharp",
+      "sharp"
+    ],
+    "onlyBuiltDependencies": [
+      "@sentry/cli"
+    ]
+  },
+  "resolutions": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }
