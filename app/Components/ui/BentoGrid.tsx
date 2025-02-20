@@ -2,6 +2,8 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBG";
 import dynamic from "next/dynamic";
+import { WorldMapDemo } from "@/app/Components/ui/world-map-demo";
+
 
 
 const CopyEmailButton = dynamic(() => import('../CopyEmailButton'), {
@@ -112,7 +114,11 @@ export const BentoGridItem = ({
             </div>
         
 
-{/* { id === 2 && <GlobeDemo/>} */}
+{ id === 2 && (
+  <div className="flex justify-center absolute items-center h-full w-full overflow-hidden object-contain">
+<WorldMapDemo/>
+  </div>
+  ) }
 
 {id === 3 && (
  <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">

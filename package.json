@@ -17,7 +17,7 @@
     "framer-motion": "^12.4.5",
     "init": "^0.1.2",
     "mini-svg-data-uri": "^1.4.4",
-    "motion": "^12.4.4",
+    "motion": "12.0.0-alpha.2",
     "next": "15.1.7",
     "next-themes": "^0.4.4",
     "npx": "^3.0.0",
