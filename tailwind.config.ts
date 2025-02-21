@@ -26,6 +26,7 @@ const config = {
       },
     },
     extend: {
+
       colors: {
         black: {
           DEFAULT: "#000",
@@ -161,6 +162,7 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
+    
   },
   plugins: [
     // eslint-disable-next-line @typescript-eslint/no-require-imports
