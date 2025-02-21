@@ -17,7 +17,7 @@ const RecentProjects = () => {
 {projects.map(({
     id, title, des, img, iconLists, link
 }) => (
-  // eslint-disable-next-line react/jsx-key
+  
   <div key={id} className='lg:h-[32rem] lg:min-h-[32.5rem] h-[25rem] flex 
   items-center justify-center sm:w-[570px] w-[80vw] sm:h-[41rem]'>
    <PinContainer title={link} href={link}>

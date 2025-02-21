@@ -6,13 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sentry:release": "dotenv -e .env -- sentry-cli releases new $npm_package_version"
   },
   "dependencies": {
+    "@sentry/cli": "^2.42.1",
     "@sentry/nextjs": "9",
     "@tabler/icons-react": "^3.30.0",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
     "dotted-map": "^2.2.3",
     "framer-motion": "^12.4.5",
     "init": "^0.1.2",
