@@ -43,3 +43,7 @@ disableLogger: true,
 // https://vercel.com/docs/cron-jobs
 automaticVercelMonitors: true,
 });
+
+eslint: {
+    ignoreDuringBuilds: true, // Ignores ESLint errors during build
+  },

@@ -4,6 +4,7 @@ import React from 'react'
 import { PinContainer } from './ui/3d-Pin'
 import { FaLocationArrow } from 'react-icons/fa'
 
+
 const RecentProjects = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const RecentProjects = () => {
     <h1 className='heading'>
       A Small Selection of {" "}
       <span className='text-purple'> recent projects </span>
+      and <span className='text-purple'> collaborations </span>
     </h1>
     <div className='flex flex-wrap items-center justify-center
     p-4 gap-x-24 gap-y-8 mt-10'>
@@ -27,8 +29,10 @@ const RecentProjects = () => {
         bg-[#13162d]'>
             <img src="/" alt="" />
         </div>
-        <img src={img} alt={title} 
-        className='z-10 absolute bottom-0'/>
+        <img 
+        src={img} alt={title} 
+        className='z-10 absolute top-0'
+        />
     </div>
     <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1 
     '>
@@ -61,9 +65,8 @@ const RecentProjects = () => {
 ))}
     </div>
    </div>
-    </div>
-   
+    </div>  
   )
 }
 
-export default RecentProjects
+export default RecentProjects;

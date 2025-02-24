@@ -80,60 +80,54 @@ export const navItems = [
         },
         {
           id: 2,
-          title: "Yoom - Video Conferencing App",
-          des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-          img: "/p2.svg",
+          title: "E-shop - A Modern interactive Website",
+          des: "A modern, responsive eShop website featuring a clean design and user-friendly interface. Optimized for all devices, it offers smooth navigation, intuitive layouts, and an engaging shopping experience, making it easy for users to browse, explore, and purchase products effortlessly.",
+          img: "/Eshop1.png",
           iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-          link: "https://github.com/adrianhajdin/zoom-clone",
+          link: "https://e-shop-bchv.vercel.app/",
         },
         {
           id: 3,
-          title: "AI Image SaaS - Canva Application",
-          des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-          img: "/p3.svg",
+          title: "Ridely - Logistics Company",
+          des: "Riderly is a parcel pickup and delivery platform designed to streamline logistics for businesses and individuals. It offers real-time tracking, efficient route management, and a user-friendly interface, ensuring fast, reliable, and hassle-free deliveries. Built with a focus on performance, scalability, and seamless user experiences.",
+          img: "/Ridely1.png",
           iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-          link: "https://github.com/adrianhajdin/ai_saas_app",
+          link: "https://Riderly.vercel.app",
         },
         {
           id: 4,
-          title: "Animated Apple Iphone 3D Website",
-          des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-          img: "/p4.svg",
+          title: "Esosa John's Foundation",
+          des: "Esosa John's Foundation is a leading financial advisory institution dedicated to empowering individuals and businesses with expert financial guidance, wealth management strategies, and personalized solutions to achieve long-term financial stability and growth.",
+          img: "/EJF1.png",
           iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-          link: "https://github.com/adrianhajdin/iphone",
+          link: "https://esosa-john-foundation.vercel.app/",
         },
       ];
       
       export const testimonials = [
         {
           quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-          name: "Michael Johnson",
-          title: "Director of AlphaStream Technologies",
+            "Williams is a rare talent — combining frontend finesse with backend expertise. Their proactive approach and dedication ensured our app was both beautiful and robust.",
+          name: "Jeremy Barth",
+          title: "Chief Technology Officer at Brightside",
         },
         {
           quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-          name: "Michael Johnson",
-          title: "Director of AlphaStream Technologies",
+            "It’s rare to find a developer as versatile and dedicated as Trust. Their strong technical skills, problem-solving mindset, and clear communication helped us meet tight deadlines without sacrificing quality",
+          name: "Victor Okoronkwo",
+          title: "Group Managing Director at Aiteo",
         },
         {
           quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-          name: "Michael Johnson",
-          title: "Director of AlphaStream Technologies",
+            "Collaborating with Trust was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Trust's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+          name: "Esosa John",
+          title: "Founder of Esosa John Foundation (EJF)",
         },
         {
           quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-          name: "Michael Johnson",
-          title: "Director of AlphaStream Technologies",
-        },
-        {
-          quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-          name: "Michael Johnson",
-          title: "Director of AlphaStream Technologies",
+            "The collaboration with Mr Williams brought our project to new heights. Their comprehensive understanding of both client-side and server-side technologies ensured a robust and user-friendly application.",
+          name: "Emmanuel Nnorom",
+          title: "Group CEO at Heirs Holdings",
         },
       ];
       
@@ -180,7 +174,7 @@ export const navItems = [
         },
         {
           id: 2,
-          title: "Mobile App Dev - JSM Tech",
+          title: "Frontend Dev - Sarutech",
           desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
           className: "md:col-span-2", // change to md:col-span-2
           thumbnail: "/exp2.svg",
@@ -214,4 +208,8 @@ export const navItems = [
           id: 3,
           img: "/link.svg",
         },
+        {
+          id: 4,
+          img:""
+        }
       ];

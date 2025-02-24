@@ -2,7 +2,8 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBG";
 import dynamic from "next/dynamic";
-import { WorldMapDemo } from "@/app/Components/ui/world-map-demo";
+import { WorldMapDemo } from "../world-map-demo";
+
 
 const CopyEmailButton = dynamic(() => import('../CopyEmailButton'), {
   ssr: false,
@@ -62,17 +63,17 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           {img && (
             <img
-              src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover object-center")}
+            src={img}
+            alt={img}
+            className={cn(imgClassName, "object-cover object-center")}         
             />
           )}
         </div>
 
         <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
           {spareImg && (
-            <img
-              src={spareImg}
+            <img 
+            src={spareImg}
               alt={spareImg}
               className="object-cover object-center"
             />
@@ -98,8 +99,8 @@ export const BentoGridItem = ({
           </div>
 
           {id === 2 && (
-            <div className="flex justify-center absolute items-center h-full w-full mt-2 overflow-hidden">
-                <WorldMapDemo />
+            <div className="absolute right-0 left-0">
+                <WorldMapDemo/>
             </div>
           )}
 
