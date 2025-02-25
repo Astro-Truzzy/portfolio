@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // ✅ Replace Geist with Inter
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics/>
       <body className={`${inter.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -27,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          {children}          
         </ThemeProvider>
       </body>
     </html>
