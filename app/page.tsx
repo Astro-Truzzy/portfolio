@@ -8,6 +8,7 @@ import Clients from "./Components/Clients";
 import Experience from "./Components/Experience";
 import Approach from "./Components/Approach";
 import Footer from "./Components/Footer";
+import ScrollToTop from "@/app/Components/ScrollToTop"
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Experience/>
         <Approach/>
         <Footer/>
+        <ScrollToTop/>
       </div>
     </main>
   );
