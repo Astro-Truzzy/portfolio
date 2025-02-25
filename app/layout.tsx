@@ -21,7 +21,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics/>
       <body className={`${inter.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -29,7 +28,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}          
+          {children} 
+          <Analytics/>         
         </ThemeProvider>
       </body>
     </html>
